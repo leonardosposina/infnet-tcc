@@ -1,0 +1,46 @@
+/* Empty. Add your own CSS if you like */
+.text-center {
+  text-align:center;
+}
+
+.text-justify {
+  text-align:justify;
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-fit {
+  width: 100%;
+}
+
+.spinner svg {
+  width: 200px;
+  height: 200px;
+}
+
+.icon-larger {
+  font-size: x-large;
+}
+
+.alarm-active {
+  background-color: red;
+  font-weight: bold;
+  color: white;
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}

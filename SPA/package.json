@@ -1,0 +1,31 @@
+{
+  "name": "arduino_spa",
+  "version": "1.0.0",
+  "description": "A simple Single Page Application (SPA) client for the Arduino Home Automation Project.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardosposina/infnet-tcc.git"
+  },
+  "keywords": [
+    "Arduino",
+    "SPA",
+    "Home",
+    "Automation"
+  ],
+  "author": "Leonardo Sposina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonardosposina/infnet-tcc/issues"
+  },
+  "homepage": "https://github.com/leonardosposina/infnet-tcc/SPA#readme",
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-route": "^1.6.1",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}

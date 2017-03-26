@@ -1,0 +1,88 @@
+{
+	"variables": [],
+	"info": {
+		"name": "INFNET TCC",
+		"_postman_id": "a88d312b-fd94-d553-20d0-d5689c41502e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get relay list",
+			"request": {
+				"url": "http://192.168.1.150/relay",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Requisição da lista de relays."
+			},
+			"response": []
+		},
+		{
+			"name": "Get sensor list",
+			"request": {
+				"url": "http://192.168.1.150/sensor",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Requisição da lista de sensores."
+			},
+			"response": []
+		},
+		{
+			"name": "Get alarm list",
+			"request": {
+				"url": "http://192.168.1.150/alarm",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Requisição da lista de alarmes."
+			},
+			"response": []
+		},
+		{
+			"name": "Get relay 2 information - (501 Not Implemented)",
+			"request": {
+				"url": "http://192.168.1.150/relay/rly2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "A requisição de informações para um determinado relay não foi implementada."
+			},
+			"response": []
+		},
+		{
+			"name": "Relay 1 - Change Status",
+			"request": {
+				"url": "http://192.168.1.150/relay/rly1",
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": "O status do resource indicado é modificado. (toogle)"
+			},
+			"response": []
+		},
+		{
+			"name": "Relay 10 - Change Status (404 Not Found)",
+			"request": {
+				"url": "http://192.168.1.150/relay/rly10",
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": "Não existe um resource com este ID."
+			},
+			"response": []
+		},
+		{
+			"name": "Relay 11 - Create Resource (501 Not Implemented)",
+			"request": {
+				"url": "http://192.168.1.150/relay/rly11",
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": "O método POST não foi implementado."
+			},
+			"response": []
+		}
+	]
+}

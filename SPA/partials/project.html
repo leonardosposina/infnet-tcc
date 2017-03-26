@@ -1,0 +1,180 @@
+<div class="well text-center">
+  <h3 class="drop-shadow">
+    <span class="glyphicon glyphicon-education" aria-hidden="true">&nbsp;</span>{{ ::title }}
+  </h3><hr/>
+  <div class="row">
+    <div class="col-md-12">
+      <p class="text-justify">
+        Este trabalho tem como objetivo a criação de um pequeno projeto de automação residencial de baixo custo, com a utilização de tecnologias <i>open source</i> e a demonstração da integração entre os seus diversos sistemas. Na construção física do projeto, foi utilizada a plataforma de prototipação eletrônica Arduino, que possui diversos <i>shields</i>, módulos e sensores de baixo custo, o que possibilitou reduzir drasticamente o seu custo total.
+      </p>
+      <p class="text-justify">
+        Para a comunicação com o Arduino foram desenvolvidos <i>softwares</i> na forma de um <i>Single Page Application</i> (SPA) e aplicativos para as plataformas móveis Android e iOS, com a utilização dos <i>frameworks</i> AngularJS, Ionic e Cordova.
+      </p>
+      <p class="text-justify">  
+        O Arduino fica ligado à rede local da residência através de uma conexão <i>ethernet</i>, disponibilizando um <i>web service</i> que responde às requisições HTTP através da sua REST API. Todos os códigos fonte e esquemas do projeto podem ser livremente distribuídos e modificados, pois, desta forma, a criação de outros projetos dentro desta temática será estimulada.
+      </p>
+    </div>
+  </div><hr/><br/>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <button class="btn btn-md btn-block btn-default" type="button" data-toggle="collapse" data-target="#partsCollapse" aria-expanded="false">
+              <span class="glyphicon glyphicon-tasks" aria-hidden="true">&nbsp;</span>Arduino + Módulos
+            </button>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <button class="btn btn-md btn-block btn-default" type="button" data-toggle="collapse" data-target="#diagramaCollapse" aria-expanded="false">
+              <span class="glyphicon glyphicon-calendar" aria-hidden="true">&nbsp;</span>Diagrama do Projeto
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <button class="btn btn-md btn-block btn-default" type="button" data-toggle="collapse" data-target="#pinoutCollapse" aria-expanded="false">
+              <span class="glyphicon glyphicon-pushpin" aria-hidden="true">&nbsp;</span>Pinout
+            </button>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <button class="btn btn-md btn-block btn-default" type="button" data-toggle="collapse" data-target="#webserviceCollapse" aria-expanded="false">
+              <span class="glyphicon glyphicon-cog" aria-hidden="true">&nbsp;</span>Web Service
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="collapse" id="partsCollapse">
+    <div class="row"><hr/>
+      <h4><strong>Arduino + Módulos</strong></h4>
+      <div class="col-md-6 text-center">
+        <img src="img/UNO.png" class="img-responsive img-drop-shadow" alt="Arduino Uno Rev.3">
+        <p class="text-muted">Arduino Uno Rev.3</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="img/W5100.png" class="img-responsive img-drop-shadow" alt="Arduino w5100 Rev.3">
+        <p class="text-muted">Arduino W5100 Ethernet Shield Rev.3</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <img src="img/RELAYMODULE.png" class="img-responsive img-drop-shadow" alt="Arduino 8 Channel Relay Module">
+        <p class="text-muted">ElecFreaks 8 Channels Relay Module</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 text-center">
+        <img src="img/DHT11.png" class="img-responsive" alt="DHT-11 Sensor Module">
+        <p class="text-muted">DHT-11 Sensor Module</p>
+      </div>
+      <div class="col-md-3 text-center">
+        <img src="img/LDR.png" class="img-responsive" alt="Light Dependent Resistor">
+        <p class="text-muted">Light Dependent Resistor</p>
+      </div>
+      <div class="col-md-3 text-center">
+        <img src="img/Resistor1K.png" class="img-responsive" alt="Resistor 1K Ohm">
+        <p class="text-muted">Resistor 1K Ohm&nbsp;1/4W &nbsp;<u>+</u>1%</p>
+      </div>
+      <div class="col-md-3 text-center">
+        <img src="img/Pull-Up.png" class="img-responsive" alt="Interruptores Pull-Up">
+        <p class="text-muted">Interruptores Pull-Up</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="collapse" id="diagramaCollapse">
+      <div class="col-md-12"><br/>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><strong>Diagrama do Projeto</strong></h3>
+          </div>
+          <div class="panel-body">
+            <img src="img/ProjectDiagram.jpg" class="img-responsive" alt="Project Diagram">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="collapse" id="pinoutCollapse">
+      <div class="col-md-12"><br/>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><strong>Pinout</strong></h3>
+          </div>
+          <div class="panel-body">
+            <div class="table-responsive">
+              <table class="table table-striped table-bordered table-condensed">
+                <thead class="table-head-custom">
+                  <tr>
+                    <td>Porta</td>
+                    <td>I/O</td>
+                    <td>Conexão</td>
+                    <td>Status (inicial)</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="p in pinData">
+                    <td>{{ ::p.port }}</td>
+                    <td>{{ ::p.io }}</td>
+                    <td><strong class="text-{{ p.color }}">{{ ::p.connection }}</strong></td>
+                    <td>{{ ::p.status }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="collapse" id="webserviceCollapse">
+      <div class="col-md-12"><br/>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><strong>Web Service</strong></h3>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="img-responsive" src="img/WebService.png" alt="Web Service">
+              </div>
+              <div class="col-md-6"><hr/>
+                <p class="text-justify">
+                  O <strong>Arduino Uno</strong> foi programado para disponibilizar uma <i>REST API</i>, que será responsável por receber e responder às requisições HTTP relacionadas aos componentes a ele conectados.
+                </p><hr/>
+                <h4 class=>REST API</h4>
+                <pre class="text-left">
+Lista os relays:
+GET /relay
+
+Lista os sensores:
+GET /sensor
+
+Lista os alarmes:
+GET /alarm
+
+Aciona um relay:
+PUT /relay/{id}
+
+Desativa todos os relays:
+PUT /relay/alloff
+                </pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

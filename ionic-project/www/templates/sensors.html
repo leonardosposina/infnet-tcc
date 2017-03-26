@@ -1,0 +1,38 @@
+<ion-view view-title="Sensores">
+  <ion-content>
+    <div class="list text-center">
+      <div class="item item-divider">
+        Iluminação {{sensorsList.lighting | number: 2}}%
+      </div>
+      <div class="item range range-positive">
+        <i class="ion-ios-lightbulb"></i>
+        <input type="range" name="lighting" min="0" max="100" ng-model="sensorsList.lighting" ng-disabled="true">
+        <i class="ion-ios-lightbulb-outline"></i>
+      </div>
+      <div class="item item-divider">
+        Temperatura {{sensorsList.temperature.cur | number: 2}}°C
+      </div>
+      <div class="item range range-positive">
+        <i class="icon ion-ios-snowy"></i>
+        <input type="range" name="temperature" min="0" max="100" ng-model="sensorsList.temperature.cur" ng-disabled="true">
+        <i class="icon ion-ios-sunny"></i>
+      </div>
+      <div class="item item-divider">
+        Umidade {{sensorsList.humidity | number: 2}}%
+      </div>
+      <div class="item range range-positive">
+        <i class="icon ion-ios-cloud-outline"></i>
+        <input type="range" name="temperature" min="0" max="100" ng-model="sensorsList.humidity" ng-disabled="true">
+        <i class="icon ion-waterdrop"></i>
+      </div>
+      <div class="item item-divider">
+        Alarmes
+      </div>
+      <div class="list list-inset" ng-repeat="alarm in alarmsList">
+        <div class="item" ng-class="isAlarmActive(alarm)">
+          {{alarm.label}}
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

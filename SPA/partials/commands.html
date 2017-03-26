@@ -1,0 +1,31 @@
+<div class="well text-center" ng-show="responseStatus">
+	<h3 class="drop-shadow">
+		<span class="glyphicon glyphicon-record" aria-hidden="true">&nbsp;</span>{{ ::title }}
+	</h3><hr/>
+	<div class="row">
+	  <div class="col-md-12">
+	    <div class="panel panel-default">
+	      <div class="panel-body">
+	        <div class="row">
+						<div class="col-md-3" ng-repeat="relay in relayList">
+	          	<div class="form-group">
+	              <button class="btn btn-lg btn-block btn-default" type="button" ng-click="actRelay(relay)" ng-value="relay.value">
+	                <span class="glyphicon glyphicon-option-vertical pull-left" ng-style="{'color': isRelayActive(relay)}" aria-hidden="true"></span>
+	                <strong>{{ relay.label }}</strong>
+	              </button>
+	          	</div>
+						</div>
+					</div>
+					<div class="row">
+	        	<div class="col-lg-2 col-lg-offset-5 text-center">
+				      <button class="btn btn-md btn-block btn-danger" type="button" ng-disabled="!isSomeActive(relayList)" ng-click="offRelays()">
+				        <span class="glyphicon glyphicon-off pull-left" aria-hidden="true">&nbsp;</span>Desativar Relays
+				      </button>
+			      </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</div>
+<div loading ng-if="!responseStatus"></div>

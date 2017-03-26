@@ -1,0 +1,16 @@
+<ion-view view-title="Configurações">
+  <ion-content>
+    <info-alert message="'Salvo com sucesso!'" timeout="1000"></info-alert>
+    <h4 class="text-center padding">Arduino W5100 Ethernet Shield</h4>
+    <img class="img-center img-fit" src="img/W5100.png" alt="Arduino W5100 Ethernet Shield">
+    <div class="list list-inset">
+      <label class="item item-input">
+        <i class="icon ion-code-working icon-larger placeholder-icon"></i>&nbsp;
+        <form name="addressForm">
+          <input type="text" ng-model="arduinoAddress" ng-pattern="/ˆ\d{2,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d{2,4}$/" placeholder="<endereço IP>:<porta>" required="true"/>
+        </form>
+      </label>
+      <button class="item icon-left ion-bookmark button button-balanced button-block" ng-click="saveAddress(arduinoAddress)" ng-disabled="addressForm.$invalid">Salvar Configurações</button>
+    </div>
+  </ion-content>
+</ion-view>
